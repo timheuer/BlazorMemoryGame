@@ -43,12 +43,11 @@ namespace BlazorMemoryGame.Models
             ResetGame();
         }
 
-        // Wrap call chain
         public void ResetGame()
         {
             var random = new Random();
             ShuffledCards = animalEmojis.Concat(animalEmojis).OrderBy(item => random.Next()).Select(item => AnimalCard.Create(item)).ToList();
-            MatchesFound = 0;
+            MatchesFound = 0; 
             timerStart = timerEnd = null;
         }
         
@@ -56,15 +55,15 @@ namespace BlazorMemoryGame.Models
         {
             if (!timer.Enabled)
             {
-                timerStart = DateTime.Now;
+                timerStart = DateTime.Now; 
                 timer.Start();
             }
 
             // Simplify conditional expression
             if (!card.IsTurned ? isTurningInProgress : true)
-            {
+            { 
                 return;
-            }
+            } 
 
             card.IsTurned = true;
 
@@ -79,7 +78,7 @@ namespace BlazorMemoryGame.Models
                     MatchesFound++;
                     card.IsMatched = lastCardSelected.IsMatched = true;
                 }
-                else
+                else 
                 {
                     isTurningInProgress = true;
                     await Task.Delay(turnDelayDuration); // Pause before turning back

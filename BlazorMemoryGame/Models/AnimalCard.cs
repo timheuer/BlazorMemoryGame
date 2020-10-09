@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net.Http.Headers;
+﻿
 
 namespace BlazorMemoryGame.Models
 {
+    using System;
+    using System.Collections.Generic;
     /// <summary>
     /// <c>AnimalCard</c> displays a unique animal on each card
     /// <para>
