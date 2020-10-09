@@ -75,7 +75,7 @@ namespace BlazorMemoryGame.Test
             var distinctAnimals = model.ShuffledCards.Select(c => c).Distinct().ToList();
             var expectedMatchCount = 0;
 
-            // Select each pair in turn
+            // Select each pair in turn 
             foreach (var animal in distinctAnimals)
             {
                 Assert.False(model.GameEnded);
