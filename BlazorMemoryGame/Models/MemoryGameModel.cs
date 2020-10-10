@@ -50,7 +50,7 @@ namespace BlazorMemoryGame.Models
                                         .OrderBy(item => random.Next())
                                         .Select(item => AnimalCard.Create(item))
                                         .ToList();
-            MatchesFound = 9;
+            MatchesFound = 0;
             timerStart = timerEnd = null;
         }
         
