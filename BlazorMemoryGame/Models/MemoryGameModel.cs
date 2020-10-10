@@ -46,8 +46,12 @@ namespace BlazorMemoryGame.Models
         public void ResetGame()
         {
             var random = new Random();
-            ShuffledCards = animalEmojis.Concat(animalEmojis).OrderBy(item => random.Next()).Select(item => AnimalCard.Create(item)).ToList();
-            MatchesFound = 0; 
+            ShuffledCards = animalEmojis.Concat(animalEmojis)
+                                        .OrderBy(item => random.Next())
+                                        .Select(item => AnimalCard.Create(item))
+                                        .ToList();
+            MatchesFound = 9;
+            timerStart = timerEnd = null;
         }
         
         public async Task SelectCardAsync(AnimalCard card)
