@@ -52,7 +52,6 @@ public class PerfTests1
             _stream.Position = 0;
             JsonSerializer.SerializeAsync(_stream, _array);
         }
-
     }
 }
 
