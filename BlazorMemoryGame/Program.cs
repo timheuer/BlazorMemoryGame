@@ -1,11 +1,9 @@
-// Custom file header. Copyright and License info.
-
-using BlazorMemoryGame.Models;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.DependencyInjection;
-using System;
+using BlazorMemoryGame.Models;
 using System.Net.Http;
-using System.Threading.Tasks;
+using System;
 
 namespace BlazorMemoryGame
 {

@@ -4,17 +4,7 @@
       <Property Name="Solution" />
       <Rule Match="Any">
         <Property Name="Project" Value="NET5BenchmarkTests (netcoreapp3.1)" />
-        <Rule Match="All">
-          <Property Name="Project" Value="NET5BenchmarkTests (net5.0)" />
-          <Rule Match="Any">
-            <Rule Match="All">
-              <Property Name="Namespace" Value="" />
-              <Rule Match="Any">
-                <Property Name="Class" Value="PerfTests1" />
-              </Rule>
-            </Rule>
-          </Rule>
-        </Rule>
+        <Property Name="Project" Value="NET5BenchmarkTests (net5.0)" />
       </Rule>
     </Rule>
   </Rule>

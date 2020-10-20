@@ -1,6 +1,4 @@
-﻿// Custom file header. Copyright and License info.
-
-namespace BlazorMemoryGame.Models
+﻿namespace BlazorMemoryGame.Models
 {
     // Go To Base
     public class CatCard : AnimalCard

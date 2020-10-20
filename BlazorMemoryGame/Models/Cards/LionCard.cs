@@ -1,6 +1,4 @@
-﻿// Custom file header. Copyright and License info.
-
-namespace BlazorMemoryGame.Models
+﻿namespace BlazorMemoryGame.Models
 {
     public class LionCard : AnimalCard
     {
